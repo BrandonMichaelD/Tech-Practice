@@ -8,14 +8,6 @@
 ##Smells weird
 
 
-import randList
-import sortAssert
-
-initial = randList.listCreate(500)
-
-print("start")
-print(initial)
-print("-------------------------------------------------")
 
 
 
@@ -43,10 +35,6 @@ def quickSort(arr,start,end):
         quickSort(arr, start,pivot-1) #left
         quickSort(arr,pivot+1,end) #right
     
-
-quickSort(initial,0,len(initial)-1)
-print(initial)
-sortAssert.check(initial)
 
 
 

@@ -3,9 +3,6 @@
 ##Then we check the elements in bucket by the SECOND sig figure
 ##Then when we put it back together, we check by the THIRD
 
-import randList
-import sortAssert
-
 
 #initial = randList.listCreate(500)
 

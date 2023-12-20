@@ -4,10 +4,7 @@
 ## Then one by one swap the largest(first) element with the smallest(last)
 ##Remove the last and repeat => sorted array!
 ##To keep the sort in place, N is the number of elements
-import randList
-import sortAssert
 
-initial = randList.listCreate(10000)
 
 def heapify(arr,index, N):
     max = index  #index of the max value
@@ -44,6 +41,3 @@ def heapSort(arr):
         arr[ii], arr[0] = arr[0], arr[ii] #Swap smallest(last) with largest(first)
         heapify(arr,0,ii)
 
-
-heapSort(initial)
-sortAssert.check(initial)

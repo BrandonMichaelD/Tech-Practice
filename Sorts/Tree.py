@@ -2,11 +2,6 @@
 ##First, take the array and put it into a tree!
 ##Then, in order traversal to get get the sorted list!
 ##Run time is always nlogn, space is always n
-import randList
-import sortAssert
-
-initial = randList.listCreate(500)
-
 
 class Node:
     def __init__(self,number) -> None:
@@ -52,5 +47,3 @@ def treeSort(arr):
     inOrderTraversal(root,arr)
 
 
-treeSort(initial)
-sortAssert.check(initial)

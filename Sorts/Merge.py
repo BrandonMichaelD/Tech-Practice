@@ -6,14 +6,6 @@
 
 ##Linked lists are great for merge
 
-import randList
-
-initial = randList.listCreate(40)
-
-print("start")
-print(initial)
-print("-------------------------------------------------")
-
 
 def merge(arr):
     if len(arr)>1:
@@ -48,5 +40,3 @@ def merge(arr):
 
     
 
-merge(initial)
-print(initial)

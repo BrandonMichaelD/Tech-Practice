@@ -7,7 +7,6 @@
 
 
 import random
-import randList
 
 """initial = randList.listCreate(500)
 

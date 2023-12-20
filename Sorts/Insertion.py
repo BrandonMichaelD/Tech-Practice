@@ -7,18 +7,15 @@ Space: O(1)
 
 
 """
-import randList
-initial = randList.listCreate(40)
-print(initial)
 
+def sort(arr):
+    for ii in range(1,len(arr)): #start at the second index
+        if arr[ii] < arr[ii-1]:
+            temp = arr[ii]
+            index = ii
+            while temp <= arr[index-1] and index >0:
+                arr[index] = arr[index-1]
+                index -= 1
+            
+            arr[index] = temp
 
-for ii in range(1,len(initial)): #start at the second index
-    if initial[ii] < initial[ii-1]:
-        temp = initial[ii]
-        index = ii-1
-        while temp <= initial[index] and index >0:
-            initial[index+1] =initial[index]
-            index -=1
-        initial[index] = temp
-
-print(initial)
